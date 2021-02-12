@@ -1,0 +1,13 @@
+.sidenav a {
+    font-family: OpenSans-Bold;
+    font-size: 22px;
+    color: red;
+    display: block;
+    padding: 11px;
+    text-decoration: none;
+    border-top: 1px solid #212121;
+    border-bottom: 1px solid #212121;
+}
+.sidenav a:hover{
+	color: orange;
+}

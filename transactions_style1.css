@@ -1,0 +1,211 @@
+body, html {
+    height: 100%;
+    background: url("images/send.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+tr{
+	background-color: pink;
+}
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    margin-left: 256px;
+    width: auto;
+    height: auto;
+    padding-top: 20px;
+    flex-direction: column;
+    overflow-x: auto;
+    color:blue;
+}
+
+.flex-item-search-bar {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+.fi-search-bar-fixed {
+    position: relative;
+    left: -128px;
+}
+
+
+.flex-container-bb {
+    display: -webkit-flex;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 27px;
+}
+label {
+    display: block;
+    float: left;
+    color: yellow;
+    font-family: OpenSans-Bold;
+    font-size: 20px;
+}
+imgcontainer {
+    text-align: center;
+    margin-right: -20px;
+    margin-top: -5px;
+    position: relative;
+}
+
+.container {
+    padding: 16px;
+}
+
+.duration-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.date-container {
+    width: 150px;
+}
+
+h1[id="filter"] {
+    color: #212121;
+    font-family: OpenSans-Light;
+}
+
+p[id="filter"] {
+    color: #212121;
+    margin-top: -25px;
+    border-bottom: 3px solid #212121;
+    font-family: OpenSans-Regular;
+    font-size: 20px;
+}
+
+
+p[id="minus"] {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: yellow;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px;
+    border-radius: 3px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+}
+
+/*-----------------------------------------------------*/
+@media screen and (max-width: 855px) {
+    .flex-container, .search-bar-wrapper .search-bar {
+        margin-left: auto;
+    }
+}
+
+#transactions {
+    font-family: OpenSans-Regular;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    background-color: yellow;
+}
+
+@media screen and (max-width: 1280px) {
+    #transactions {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 855px) {
+    #transactions {
+        width: 85%;
+    }
+}
+
+#transactions td, #transactions th {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#transactions tr:nth-child(even){background-color: red;}
+
+#transactions tr:hover {background-color: #ddd;}
+
+#transactions th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: black;
+    color: white;
+}
+
+p[id="none"] {
+    margin: auto;
+    font-size: 40px;
+    color: red;
+    font-family: Roboto-Regular;
+}

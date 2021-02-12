@@ -1,0 +1,11 @@
+body{
+height: 10%;
+    background: url("images/money2.JPG") no-repeat center center fixed;
+    background-size: cover;
+}
+.customer{
+	color: white;
+}
+h2{
+	color: yellow;
+}
